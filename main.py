@@ -44,8 +44,8 @@ def main():
         print(f"You rolled a total of {sum(roll)} ({', '.join(map(str, roll))})", end="\n\n") # Convert list of ints into str
         
         # Ask the user if they want to play again
-        play_again = input("Do you want to roll again? (yes/no): ").strip().lower()
-        if play_again != "yes":
+        play_again = input("Do you want to roll again? (y/n): ").strip().lower()
+        if play_again != "y":
             print("Thanks for playing! Goodbye!")
             break  # Exit the main loop
 
